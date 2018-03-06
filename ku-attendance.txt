@@ -1,2 +1,17 @@
+<<<<<<< HEAD
 Hi!!! Somjai Banthaokul
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+maharat
+=======
+amp
+>>>>>>> 353995ef175f021a032652d3dbc684393ec51495
+=======
+amp
+hi hi
+>>>>>>> 433dbd81d1e89a16106553d094ab4cb9e8542829
+>>>>>>> fd7344bd4ca65f62b19e6fc431e002cd682ff52c
+
+Somjai Banthaokul
