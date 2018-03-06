@@ -1,4 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+sunisa somthawin
+amp
+=======
+amp
+hi hi
+>>>>>>> da1b8c0d510e9fb662f2fc06b4aa25732a4f7338
+=======
 Hi!!! Somjai Banthaokul
 
 =======
@@ -15,3 +23,4 @@ hi hi
 >>>>>>> fd7344bd4ca65f62b19e6fc431e002cd682ff52c
 
 Somjai Banthaokul
+>>>>>>> d5935041cc379ffffa6765345bb1e4585c2a96f9
