@@ -23,4 +23,9 @@ hi hi
 >>>>>>> fd7344bd4ca65f62b19e6fc431e002cd682ff52c
 
 Somjai Banthaokul
+<<<<<<< HEAD
+
+Have you ever seen the rain ???
+=======
 >>>>>>> d5935041cc379ffffa6765345bb1e4585c2a96f9
+>>>>>>> 0e4f3a9e003e058147f2e713bcdead2050c988f7
