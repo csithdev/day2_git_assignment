@@ -16,6 +16,7 @@ tanakorn
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -31,3 +32,6 @@ tanakorn
 
 
 Pajeejin ARWRON
+=======
+thanaluck
+>>>>>>> 9033003763bae26704b1d3e83615218cec811634
