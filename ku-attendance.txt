@@ -1,7 +1,26 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 sunisa somthawin
 amp
 =======
 amp
 hi hi
 >>>>>>> da1b8c0d510e9fb662f2fc06b4aa25732a4f7338
+=======
+Hi!!! Somjai Banthaokul
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+maharat
+=======
+amp
+>>>>>>> 353995ef175f021a032652d3dbc684393ec51495
+=======
+amp
+hi hi
+>>>>>>> 433dbd81d1e89a16106553d094ab4cb9e8542829
+>>>>>>> fd7344bd4ca65f62b19e6fc431e002cd682ff52c
+
+Somjai Banthaokul
+>>>>>>> d5935041cc379ffffa6765345bb1e4585c2a96f9
