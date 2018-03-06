@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 sunisa somthawin
 amp
+=======
+amp
+hi hi
+>>>>>>> da1b8c0d510e9fb662f2fc06b4aa25732a4f7338
