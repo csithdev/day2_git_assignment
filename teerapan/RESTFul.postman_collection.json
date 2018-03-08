@@ -1,0 +1,235 @@
+{
+	"info": {
+		"name": "RESTFul",
+		"_postman_id": "edd33cd9-c52d-467a-be72-59810341d95d",
+		"description": "This collection contains about the API request detail about Resources in the Project.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "product",
+			"description": "Product listing in the project",
+			"item": [
+				{
+					"name": "Delete Existing Product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Proton Axe\",\n    \"descr\": \"new weapon for hunting\",\n    \"price\": 2500,\n    \"photo\": \"none\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/product/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"product",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5aa0c4e660eccc3918784870",
+									"description": "product id to delete"
+								}
+							]
+						},
+						"description": "deleting product from the project and return with the deleted or error message if not found"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Existing Product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Microphone 2\",\n    \"descr\": \"new weapon for hunting\",\n    \"price\": 80000,\n    \"photo\": \"none\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/product/{{sample_product_id}}/edit",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"product",
+								"{{sample_product_id}}",
+								"edit"
+							]
+						},
+						"description": "update by identify product id in the url and provide with json formatted request body to update existing product"
+					},
+					"response": []
+				},
+				{
+					"name": "Save new Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Proton Axe\",\n    \"descr\": \"tests\",\n    \"price\": 2300,\n    \"photo\": \"none\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/product",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"product"
+							]
+						},
+						"description": "save new product with detail in json formatted request"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/product/{{sample_product_id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"product",
+								"{{sample_product_id}}"
+							]
+						},
+						"description": "get product detail by id of each product"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b6e5e021-030c-46c3-9f3e-01b933cf5667",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"App response code is 0\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.code).to.eql(0);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/product",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"product"
+							]
+						},
+						"description": "list of product"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "118970b5-94e2-462f-9a85-3139857c6b52",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "8d3ea262-acb6-4662-b817-5357f1364e65",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7726f44b-3492-454b-be79-6669a44eda84",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3f171bae-06b4-4628-99fd-d46e67ab1853",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "ef544bf7-a0b4-46ce-8d7e-a3706336ebb3",
+			"key": "sample_product_id",
+			"value": "5aa0c4e660eccc3918784870",
+			"type": "text",
+			"description": ""
+		}
+	]
+}
